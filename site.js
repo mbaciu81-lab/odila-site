@@ -125,7 +125,7 @@
           var st = function(){ return {trigger: hero, start:"top top", end:"bottom top", scrub: true}; };
           g.fromTo(".hero__word--1", {xPercent:0}, {xPercent:-22, ease:"none", immediateRender:false, scrollTrigger: st()});
           g.fromTo(".hero__word--2", {xPercent:0}, {xPercent:22, ease:"none", immediateRender:false, scrollTrigger: st()});
-          g.fromTo(".hero__cut", {yPercent:0, scale:1}, {yPercent:-14, scale:1.06, ease:"none", immediateRender:false, scrollTrigger: st()});
+          g.fromTo(".hero__cut", {scale:1}, {scale:1.08, transformOrigin:"50% 100%", ease:"none", immediateRender:false, scrollTrigger: st()});
           g.fromTo(".hero__blob", {scale:1}, {scale:1.25, ease:"none", immediateRender:false, scrollTrigger: st()});
           g.fromTo(".hero__info, .hero__cta", {y:0}, {y:-60, ease:"none", immediateRender:false, scrollTrigger: st()});
         });
